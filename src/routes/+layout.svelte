@@ -1,6 +1,7 @@
 <script>
 import NavBar from './components/NavBar.svelte';
 import "../app.pcss";
+  import Player from './components/Player.svelte';
 
 let items = [{
         tag: "Inicio",
@@ -30,7 +31,7 @@ let items = [{
   <!-- Sección central dividida en dos partes -->
   <main class="flex-1 flex">
     <section class="w-1/2 bg-gray-200 flex justify-center items-center">
-      <h2 class="text-center py-8 text-lg font-semibold">Sección 1</h2>
+      <Player />
     </section>
     <section class="w-1/2 bg-gray-300 flex justify-center items-center">
       <h2 class="text-center py-8 text-lg font-semibold">Sección 2</h2>
